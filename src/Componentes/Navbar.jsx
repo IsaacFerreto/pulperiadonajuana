@@ -1,8 +1,12 @@
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const Navbar=()=>{
+    
+    return(
+    <>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
     <div className="container-fluid">
       <a className="navbar-brand" href="#">
-        Navbar
+        Linda Hora
       </a>
       <button
         className="navbar-toggler"
@@ -19,12 +23,17 @@ const Navbar=()=>{
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="#">
-              Home
+              inicio
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Link
+              sobre nosotros
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+            ShoppingCartIcon 
             </a>
           </li>
           <li className="nav-item dropdown">
@@ -78,5 +87,7 @@ const Navbar=()=>{
       </div>
     </div>
   </nav>
+  </>
+)
 }
-export default Navbar;
+export default Navbar

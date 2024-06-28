@@ -19,6 +19,7 @@ const Rutas =()=>{
       ]);
 
     return(<>
+    
     <RouterProvider router={router} />
     </>)
 }

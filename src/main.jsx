@@ -8,6 +8,7 @@ import Rutas from './routes/Rutas.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    Reac
       <Rutas/>
   </React.StrictMode>,
 )
