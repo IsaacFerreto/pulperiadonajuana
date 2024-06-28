@@ -2,10 +2,12 @@
 import { useEffect, useState } from "react";
 import { get } from "../hook/useFecht";
 import { validateUser } from "../hook/validateUser";
-import Titulo from "./Titulo";
+import Titulo from "../Componentes/Titulo";
+import { useNavigate } from "react-router-dom";
 
 
 const Ingreso =({pageState})=>{
+    const navigate=useNavigate();
     const [nombre,setNombre]=useState('');
     const [contrasena,setContrasena]=useState('');
     const [usuarios,setUsuarios]=useState([])
@@ -44,7 +46,7 @@ const Ingreso =({pageState})=>{
        
         <button onClick={()=>{
             if(validateUser(usuarios,nombre,contrasena)){
-                alert("ENTRA")
+                navigate('/home')
             }else{
                 alert("NO ENTRA")
             }

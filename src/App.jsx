@@ -1,8 +1,8 @@
 
 import './App.css'
 import { useState } from 'react'
-import Registro from './Componentes/Registro'
-import Ingreso from './Componentes/Ingreso'
+import Registro from './pages/Registro'
+import Ingreso from './pages/Ingreso'
 
 function App() {
 const [pagina,setPagina]=useState(false)
