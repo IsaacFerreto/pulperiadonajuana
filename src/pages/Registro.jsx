@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { post, get } from "../hook/useFecht";
 import { validateName,validateEmpty,validateEmail,validatePassword } from "../hook/validateUser";
-import Titulo from "./Titulo";
+import Titulo from "../Componentes/Titulo";
 const Registro=( {pageState})=>{
 
     const [movTitulo,setMovTitulo]=useState("")   
